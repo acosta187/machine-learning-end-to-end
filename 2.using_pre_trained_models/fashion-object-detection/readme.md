@@ -1,3 +1,17 @@
+
+
+
+```bash
+conda activate transformers_env
+uvicorn main:app --reload
+```
+
+```bash
+conda activate data_science
+streamlit run streamlit_app.py
+```
+
+
 # Ejecución de una API con FastAPI usando Uvicorn
 
 Este proyecto utiliza **FastAPI** como framework para crear una API REST y **Uvicorn** como servidor ASGI para ejecutarla.
@@ -36,6 +50,15 @@ Esta es la forma utilizada en:
 - Proyectos reales
 
 ---
+
+### Lanzar la interfaz grafica usando streamlit
+
+```bash
+streamlit run streamlit_app.py
+```
+
+
+![Aplicacion corriendo en streamlit que consume el API creada a aprtir del modelo yainage90/fashion-object-detection](multimedia/ex.png)
 
 ## Explicación del comando
 
