@@ -12,8 +12,8 @@ Esta guía está optimizada para:
 ## 1. Crear entorno Conda
 
 ```bash
-conda create -n dl_gpu python=3.10 -y
-conda activate dl_gpu
+conda create -n ia_gpu python=3.10 -y
+conda activate ia_gpu
 ```
 
 ---
