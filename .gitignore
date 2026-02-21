@@ -1,3 +1,21 @@
+# Modelos entrenados
+spanish-bert-full-fine-tuning/
+sequential-full-fine-tuning/
+
+# Checkpoints
+checkpoint-*/
+
+# Archivos grandes de modelos
+*.safetensors
+*.bin
+*.pt
+
+# Trainer
+training_args.bin
+optimizer.pt
+scheduler.pt
+trainer_state.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -205,3 +223,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+
