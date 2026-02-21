@@ -563,6 +563,9 @@ más alto</p>
 <p>Desde la carpeta <code>implementation/</code>:</p>
 <pre class="bash"><code>conda activate transformers_env
 uvicorn main:app --reload</code></pre>
+</div>
+<div id="acceso-a-la-api" class="section level2">
+<h2>🔌 Acceso a la API</h2>
 <table>
 <thead>
 <tr class="header">
@@ -572,22 +575,55 @@ uvicorn main:app --reload</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td>API</td>
-<td><a href="http://127.0.0.1:8000" class="uri">http://127.0.0.1:8000</a></td>
+<td>API Base</td>
+<td><a href="http://localhost:8000" class="uri">http://localhost:8000</a></td>
 </tr>
 <tr class="even">
-<td>Documentación interactiva</td>
-<td><a href="http://127.0.0.1:8000/docs" class="uri">http://127.0.0.1:8000/docs</a></td>
+<td>Documentación interactiva (Swagger)</td>
+<td><a href="http://localhost:8000/docs" class="uri">http://localhost:8000/docs</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
 </div>
+<div id="cómo-probar-el-modelo" class="section level2">
+<h2>🧪 Cómo probar el modelo</h2>
+<p>Puedes probar los modelos directamente desde la documentación
+interactiva (Swagger).</p>
+<ol style="list-style-type: decimal">
+<li><p>Accede a:<br />
+<a href="http://localhost:8000/docs" class="uri">http://localhost:8000/docs</a></p></li>
+<li><p>Abre el endpoint:<br />
+<code>POST /predict</code></p></li>
+<li><p>Haz clic en <strong>“Try it out”</strong></p></li>
+<li><p>Ingresa uno de los siguientes ejemplos:</p></li>
+</ol>
+<div id="modelo-base" class="section level3">
+<h3>🔹 Modelo Base</h3>
+<pre class="json"><code>{
+  &quot;text&quot;: &quot;La cena estuvo bacán&quot;,
+  &quot;model&quot;: &quot;base&quot;
+}
+
+
+{
+  &quot;text&quot;: &quot;La cena estuvo bacán&quot;,
+  &quot;model&quot;: &quot;sequential&quot;
+}
+
+{
+  &quot;text&quot;: &quot;La cena estuvo bacán&quot;,
+  &quot;model&quot;: &quot;full&quot;
+}</code></pre>
+<hr />
+</div>
+</div>
 <div id="lanzar-el-frontend-streamlit" class="section level2">
 <h2>🖥️ Lanzar el Frontend (Streamlit)</h2>
 <p>En una terminal separada:</p>
 <pre class="bash"><code>conda activate streamlit_env
-streamlit run streamlit_app.py</code></pre>
+streamlit run streamlit_app.py
+</code></pre>
 <p>Disponible en: <strong><a href="http://localhost:8501" class="uri">http://localhost:8501</a></strong></p>
 <hr />
 </div>

@@ -145,10 +145,48 @@ conda activate transformers_env
 uvicorn main:app --reload
 ```
 
+## 🔌 Acceso a la API
+
 | Recurso | URL |
-|---|---|
-| API | http://127.0.0.1:8000 |
-| Documentación interactiva | http://127.0.0.1:8000/docs |
+|----------|------|
+| API Base | http://localhost:8000 |
+| Documentación interactiva (Swagger) | http://localhost:8000/docs |
+
+---
+
+## 🧪 Cómo probar el modelo
+
+Puedes probar los modelos directamente desde la documentación interactiva (Swagger).
+
+1. Accede a:  
+   http://localhost:8000/docs  
+
+2. Abre el endpoint:  
+   `POST /predict`
+
+3. Haz clic en **"Try it out"**
+
+4. Ingresa uno de los siguientes ejemplos:
+
+### 🔹 Modelo Base
+
+```json
+{
+  "text": "La cena estuvo bacán",
+  "model": "base"
+}
+
+
+{
+  "text": "La cena estuvo bacán",
+  "model": "sequential"
+}
+
+{
+  "text": "La cena estuvo bacán",
+  "model": "full"
+}
+```
 
 ---
 
@@ -156,9 +194,11 @@ uvicorn main:app --reload
 
 En una terminal separada:
 
+
 ```bash
 conda activate streamlit_env
 streamlit run streamlit_app.py
+
 ```
 
 Disponible en: **http://localhost:8501**
@@ -177,6 +217,7 @@ Disponible en: **http://localhost:8501**
 5. Abrir http://localhost:8501
 6. Ingresar texto → Seleccionar modelo → Obtener predicción
 ```
+
 
 ---
 
