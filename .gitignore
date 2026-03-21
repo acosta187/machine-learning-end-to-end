@@ -2,6 +2,21 @@
 spanish-bert-full-fine-tuning/
 sequential-full-fine-tuning/
 
+
+.Rhistory
+.env
+
+*.zip
+data/
+models/
+*.pkl
+*.h5
+*.pt
+*.csv
+__pycache__/
+*.pyc
+
+
 # Checkpoints
 checkpoint-*/
 
