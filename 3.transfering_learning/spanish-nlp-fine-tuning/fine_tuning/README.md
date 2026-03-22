@@ -21,6 +21,10 @@ proyecto/
     └── metadata_entrenamiento.json
 ```
 
+Los modelos entrenados se encuntran en el siguiente link:
+https://drive.google.com/drive/folders/1NJWz6YDGsM1nOj8ge4SCZTJlVM7Fbdo7?usp=sharing
+
+sequential-full-fine-tuning.zip y spanish-bert-full-fine-tuning.zip
 ---
 
 ## Instalación de dependencias
